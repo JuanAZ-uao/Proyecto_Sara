@@ -337,7 +337,7 @@ p {
 
 .history-visuals {
   display: grid;
-  grid-template-columns: 96px 1fr 1fr;
+  grid-template-columns: 96px 1fr;
   gap: 0.55rem;
   align-items: stretch;
 }
@@ -384,6 +384,19 @@ p {
 .history-title-emphasis {
   text-align: center;
   color: var(--ink);
+}
+
+.history-page {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.9)),
+    var(--history-bg) center / cover no-repeat;
+}
+
+.history-page > * {
+  position: relative;
+  z-index: 1;
 }
 
 .wide {

@@ -250,7 +250,10 @@ function App() {
     switch (activePage) {
       case 'historia':
         return (
-          <section className="panel wide">
+          <section
+            className="panel wide history-page"
+            style={{ '--history-bg': `url(${imageBySection.historyFrame})` }}
+          >
             <h2>Historia de las mil grullas</h2>
             <div className="history-visuals">
               <button
@@ -259,13 +262,6 @@ function App() {
                 onClick={() => openLightbox(imageBySection.historyLogo, 'Logo Toyota')}
               >
                 <img src={imageBySection.historyLogo} alt="Logo Toyota" className="history-logo" />
-              </button>
-              <button
-                type="button"
-                className="image-trigger"
-                onClick={() => openLightbox(imageBySection.historyFrame, 'Fondo grullas japon')}
-              >
-                <img src={imageBySection.historyFrame} alt="Fondo grullas japon" className="history-frame" />
               </button>
               <button
                 type="button"
