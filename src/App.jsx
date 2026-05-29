@@ -469,7 +469,7 @@ function App() {
             <h3>Escucha la experiencia Toyota</h3>
             <p>
               <em>
-                Disfruta una playlist disenada para transmitir tranquilidad y armonia durante tu
+                Disfruta una playlist diseñada para transmitir tranquilidad y armonia durante tu
                 experiencia en Norte Sur Toyota.
               </em>
             </p>
