@@ -94,7 +94,7 @@ function ProgressPanel({ title, subtitle, messages, onComplete, onReset, craneSp
 
 function BottomButtons({ sections, onSelect }) {
   return (
-    <nav className="bottom-menu" aria-label="Navegacion de secciones">
+    <nav className="bottom-menu" aria-label="Navegación de secciones">
       {sections.map((section) => (
         <button key={section.id} type="button" className="menu-card" onClick={() => onSelect(section.id)}>
           <span className="menu-icon" aria-hidden="true">
@@ -116,7 +116,7 @@ function PageNavigator({ sections, currentId, onSelect, onHome }) {
   const next = currentIndex < sections.length - 1 ? sections[currentIndex + 1] : null
 
   return (
-    <footer className="page-nav" aria-label="Navegacion entre paginas">
+    <footer className="page-nav" aria-label="Navegación entre páginas">
       <button
         type="button"
         className="nav-side"
@@ -183,7 +183,7 @@ function App() {
   const [activePage, setActivePage] = useState('home')
   const [workshopReady, setWorkshopReady] = useState(false)
   const [showNotification, setShowNotification] = useState(false)
-  const [notificationMessage, setNotificationMessage] = useState('Tu vehiculo ya esta listo')
+  const [notificationMessage, setNotificationMessage] = useState('Tu vehículo ya está listo')
   const [lightboxImage, setLightboxImage] = useState({ src: '', alt: '' })
   const [zoomLevel, setZoomLevel] = useState(1)
   const [selectedMeaning, setSelectedMeaning] = useState('')
@@ -266,9 +266,9 @@ function App() {
               <button
                 type="button"
                 className="image-trigger"
-                onClick={() => openLightbox(imageBySection.historyPhoto, 'Instalacion de grullas')}
+                onClick={() => openLightbox(imageBySection.historyPhoto, 'Instalación de grullas')}
               >
-                <img src={imageBySection.historyPhoto} alt="Instalacion de grullas" className="history-photo" />
+                <img src={imageBySection.historyPhoto} alt="Instalación de grullas" className="history-photo" />
               </button>
             </div>
             <p>{historiaContent.intro}</p>
@@ -283,7 +283,7 @@ function App() {
             {historiaContent.body.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
-            <h3>Que significa el Senbazuru</h3>
+            <h3>¿Qué significa el Senbazuru?</h3>
             <ul className="pill-list">
               {historiaContent.senbazuru.map((item) => (
                 <li key={item}>
@@ -343,13 +343,13 @@ function App() {
           <section className="wide">
             <ProgressPanel
               title="Tiempo de espera del taller"
-              subtitle="Estado de tu vehiculo: tu vehiculo esta siendo atendido"
+              subtitle="Estado de tu vehículo: tu vehículo está siendo atendido"
               messages={tallerMessages}
               craneSprite={craneSpritePath}
               onComplete={() => {
                 setWorkshopReady(true)
                 setShowNotification(true)
-                setNotificationMessage('Tu vehiculo ya esta listo')
+                setNotificationMessage('Tu vehículo ya está listo')
               }}
               onReset={() => {
                 setWorkshopReady(false)
@@ -363,14 +363,14 @@ function App() {
         return (
           <section className="wide">
             <ProgressPanel
-              title="Tiempo de espera para entrega del vehiculo"
-              subtitle="Tu Toyota esta en preparacion final para entrega"
+              title="Tiempo de espera para entrega del vehículo"
+              subtitle="Tu Toyota está en preparación final para entrega"
               messages={entregaMessages}
               craneSprite={craneSpritePath}
               onComplete={() => {
                 setWorkshopReady(true)
                 setShowNotification(true)
-                setNotificationMessage('Tu vehiculo ya esta listo para ser entregado')
+                setNotificationMessage('Tu vehículo ya está listo para ser entregado')
               }}
               onReset={() => {
                 setWorkshopReady(false)
@@ -417,25 +417,25 @@ function App() {
       case 'te':
         return (
           <section className="panel wide">
-            <h2>Experiencia del te japones</h2>
-            <h3>La tranquilidad del te japones</h3>
+            <h2>Experiencia del té japonés</h2>
+            <h3>La tranquilidad del té japonés</h3>
             <button
               type="button"
               className="image-trigger tea-trigger"
-              onClick={() => openLightbox(imageBySection.tea, 'Te japones')}
+              onClick={() => openLightbox(imageBySection.tea, 'Té japonés')}
             >
-              <img src={imageBySection.tea} alt="Te japones" className="tea-image" />
+              <img src={imageBySection.tea} alt="Té japonés" className="tea-image" />
             </button>
             <p>
-              <em>En Japon, el te representa calma, armonia y bienestar.</em>
+              <em>En Japón, el té representa calma, armonía y bienestar.</em>
             </p>
             <p>
-              La ceremonia del te es una tradicion japonesa que busca transmitir tranquilidad y
-              conexion con el presente.
+              La ceremonia del té es una tradición japonesa que busca transmitir tranquilidad y
+              conexión con el presente.
             </p>
             <p>
-              Inspirados en esta tradicion, en Norte Sur Toyota queremos que cada espera se
-              convierta en un momento mas relajante y agradable.
+              Inspirados en esta tradición, en Norte Sur Toyota queremos que cada espera se
+              convierta en un momento más relajante y agradable.
             </p>
             <ul className="clean-list">
               {teaHighlights.map((item) => (
@@ -469,7 +469,7 @@ function App() {
             <h3>Escucha la experiencia Toyota</h3>
             <p>
               <em>
-                Disfruta una playlist diseñada para transmitir tranquilidad y armonia durante tu
+                Disfruta una playlist diseñada para transmitir tranquilidad y armonía durante tu
                 experiencia en Norte Sur Toyota.
               </em>
             </p>
@@ -485,12 +485,12 @@ function App() {
             <h2>Sube tu origami</h2>
             <h3>Comparte tu grulla</h3>
             <p>
-              Durante tu visita podras crear una grulla de papel en nuestra sala de espera.
-              Tomale una foto y subela al aplicativo para recibir recompensas exclusivas.
+              Durante tu visita podrás crear una grulla de papel en nuestra sala de espera.
+              Tómale una foto y súbela al aplicativo para recibir recompensas exclusivas.
             </p>
 
             <label className="drop-zone" htmlFor="origami-upload">
-              Arrastra tu foto aqui o haz clic para seleccionar
+              Arrastra tu foto aquí o haz clic para seleccionar
             </label>
             <input
               id="origami-upload"
@@ -511,7 +511,7 @@ function App() {
                 <p className="success">Has recibido 100 puntos Toyota.</p>
                 <p className="final-line">
                   Gracias por hacer parte de la experiencia Norte Sur Toyota. Cada grulla
-                  representa un momento de paciencia, dedicacion y tranquilidad.
+                  representa un momento de paciencia, dedicación y tranquilidad.
                 </p>
               </>
             )}
