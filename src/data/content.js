@@ -7,12 +7,6 @@ export const heroContent = {
 
 export const menuSections = [
   {
-    id: 'taller',
-    label: 'Tiempo de espera',
-    subtitle: 'Visualiza el progreso de tu vehiculo',
-    emoji: '⏱️',
-  },
-  {
     id: 'historia',
     label: 'Historia de las grullas',
     subtitle: 'Descubre la leyenda japonesa',
@@ -23,6 +17,18 @@ export const menuSections = [
     label: 'Reserva tu experiencia',
     subtitle: 'Agenda tu cita en un toque',
     emoji: '📅',
+  },
+  {
+    id: 'taller',
+    label: 'Tiempo de espera',
+    subtitle: 'Visualiza el progreso de tu vehiculo',
+    emoji: '⏱️',
+  },
+  {
+    id: 'entrega',
+    label: 'Espera para entrega',
+    subtitle: 'Sigue el alistamiento final de tu Toyota',
+    emoji: '🚗',
   },
   {
     id: 'puntos',
@@ -107,6 +113,13 @@ export const tallerMessages = [
   'El mantenimiento esta avanzando correctamente.',
   'Tu Toyota esta en sus ultimos procesos.',
   'Tu vehiculo esta listo para ser reclamado.',
+]
+
+export const entregaMessages = [
+  'Tu vehiculo ya fue confirmado.',
+  'Estamos realizando los ultimos procesos de preparacion.',
+  'Tu Toyota pronto estara contigo.',
+  'Tu vehiculo esta listo para ser entregado.',
 ]
 
 export const puntosWays = [

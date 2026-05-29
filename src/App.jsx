@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import PointsTable from './components/PointsTable'
 import {
+  entregaMessages,
   heroContent,
   historiaContent,
   imageBySection,
@@ -182,6 +183,7 @@ function App() {
   const [activePage, setActivePage] = useState('home')
   const [workshopReady, setWorkshopReady] = useState(false)
   const [showNotification, setShowNotification] = useState(false)
+  const [notificationMessage, setNotificationMessage] = useState('Tu vehiculo ya esta listo')
   const [lightboxImage, setLightboxImage] = useState({ src: '', alt: '' })
   const [zoomLevel, setZoomLevel] = useState(1)
   const [selectedMeaning, setSelectedMeaning] = useState('')
@@ -351,6 +353,28 @@ function App() {
               onComplete={() => {
                 setWorkshopReady(true)
                 setShowNotification(true)
+                setNotificationMessage('Tu vehiculo ya esta listo')
+              }}
+              onReset={() => {
+                setWorkshopReady(false)
+                setShowNotification(false)
+              }}
+            />
+          </section>
+        )
+
+      case 'entrega':
+        return (
+          <section className="wide">
+            <ProgressPanel
+              title="Tiempo de espera para entrega del vehiculo"
+              subtitle="Tu Toyota esta en preparacion final para entrega"
+              messages={entregaMessages}
+              craneSprite={craneSpritePath}
+              onComplete={() => {
+                setWorkshopReady(true)
+                setShowNotification(true)
+                setNotificationMessage('Tu vehiculo ya esta listo para ser entregado')
               }}
               onReset={() => {
                 setWorkshopReady(false)
@@ -529,7 +553,7 @@ function App() {
 
               {showNotification && workshopReady && (
                 <div className="notification-card" role="status" aria-live="polite">
-                  <strong>Tu vehiculo ya esta listo</strong>
+                  <strong>{notificationMessage}</strong>
                 </div>
               )}
             </div>
