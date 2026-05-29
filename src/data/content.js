@@ -2,7 +2,7 @@ export const heroContent = {
   eyebrow: 'Norte Sur Toyota',
   title: 'Bienvenido a la experiencia Norte Sur Toyota',
   subtitle:
-    'Una experiencia inspirada en la tranquilidad, la paciencia y la armonia japonesa.',
+    'Una experiencia inspirada en la tranquilidad, la paciencia y la armonía japonesa.',
 }
 
 export const menuSections = [
@@ -21,7 +21,7 @@ export const menuSections = [
   {
     id: 'taller',
     label: 'Tiempo de espera',
-    subtitle: 'Visualiza el progreso de tu vehiculo',
+    subtitle: 'Visualiza el progreso de tu vehículo',
     emoji: '⏱️',
   },
   {
@@ -44,14 +44,14 @@ export const menuSections = [
   },
   {
     id: 'te',
-    label: 'Experiencia del te',
+    label: 'Experiencia del té',
     subtitle: 'Disfruta calma y serenidad',
     emoji: '🍵',
   },
   {
     id: 'playlist',
     label: 'Playlist Toyota',
-    subtitle: 'Escucha musica para relajarte',
+    subtitle: 'Escucha música para relajarte',
     emoji: '🎵',
   },
   {
@@ -64,19 +64,19 @@ export const menuSections = [
 
 export const historiaContent = {
   intro:
-    'En Japon existe una antigua leyenda llamada Senbazuru, que significa las mil grullas de papel.',
+    'En Japón existe una antigua leyenda llamada Senbazuru, que significa las mil grullas de papel.',
   body: [
-    'La tradicion dice que toda persona que logre hacer mil grullas de origami recibira un deseo lleno de esperanza, salud, tranquilidad o felicidad.',
-    'La historia se hizo conocida mundialmente gracias a Sadako Sasaki, una nina japonesa afectada por la radiacion de la bomba de Hiroshima.',
-    'Mientras permanecia en el hospital, Sadako comenzo a crear grullas de papel con la esperanza de sanar.',
-    'Aunque no logro terminar las mil grullas antes de fallecer, sus companeros continuaron la tradicion en su honor.',
-    'Desde entonces, las grullas se convirtieron en un simbolo mundial de esperanza y paz.',
-    'Cada ano, millones de grullas son enviadas al Parque de la Paz de Hiroshima como mensaje de union y tranquilidad.',
-    'En Norte Sur Toyota nos inspiramos en esta tradicion japonesa para transformar la espera en una experiencia mas tranquila y significativa.',
-    'Asi como cada grulla representa paciencia y dedicacion, queremos que cada cliente viva un momento de calma, bienestar y armonia mientras espera su vehiculo.',
+    'La tradición dice que toda persona que logre hacer mil grullas de origami recibirá un deseo lleno de esperanza, salud, tranquilidad o felicidad.',
+    'La historia se hizo conocida mundialmente gracias a Sadako Sasaki, una niña japonesa afectada por la radiación de la bomba de Hiroshima.',
+    'Mientras permanecía en el hospital, Sadako comenzó a crear grullas de papel con la esperanza de sanar.',
+    'Aunque no logró terminar las mil grullas antes de fallecer, sus compañeros continuaron la tradición en su honor.',
+    'Desde entonces, las grullas se convirtieron en un símbolo mundial de esperanza y paz.',
+    'Cada año, millones de grullas son enviadas al Parque de la Paz de Hiroshima como mensaje de unión y tranquilidad.',
+    'En Norte Sur Toyota nos inspiramos en esta tradición japonesa para transformar la espera en una experiencia más tranquila y significativa.',
+    'Así como cada grulla representa paciencia y dedicación, queremos que cada cliente viva un momento de calma, bienestar y armonía mientras espera su vehículo.',
   ],
   highlighted:
-    'La grulla japonesa es considerada un simbolo de paz, longevidad y armonia.',
+    'La grulla japonesa es considerada un símbolo de paz, longevidad y armonía.',
   senbazuru: [
     'Esperanza',
     'Paciencia',
@@ -89,12 +89,12 @@ export const historiaContent = {
 
 export const senbazuruMeaningInfo = {
   Esperanza:
-    'Representa la fe en que todo proceso puede terminar bien, incluso en momentos dificiles.',
+    'Representa la fe en que todo proceso puede terminar bien, incluso en momentos difíciles.',
   Paciencia:
     'Simboliza avanzar con calma y constancia, confiando en que cada paso aporta al resultado final.',
-  Paz: 'Invita a mantener armonia interior y relaciones respetuosas con los demas.',
+  Paz: 'Invita a mantener armonía interior y relaciones respetuosas con los demás.',
   Fortaleza:
-    'Es la capacidad de mantenerse firme ante los retos y continuar con determinacion.',
+    'Es la capacidad de mantenerse firme ante los retos y continuar con determinación.',
   Tranquilidad:
     'Refleja un estado de serenidad que permite tomar mejores decisiones y disfrutar el presente.',
   Longevidad:
@@ -103,23 +103,23 @@ export const senbazuruMeaningInfo = {
 
 export const reservaOptions = [
   'Mantenimiento y taller',
-  'Revision del vehiculo',
-  'Compra y asesoria Toyota',
+  'Revisión del vehículo',
+  'Compra y asesoría Toyota',
 ]
 
 export const tallerMessages = [
-  'Tu vehiculo ingreso correctamente al taller.',
-  'Estamos realizando la revision general.',
-  'El mantenimiento esta avanzando correctamente.',
-  'Tu Toyota esta en sus ultimos procesos.',
-  'Tu vehiculo esta listo para ser reclamado.',
+  'Tu vehículo ingresó correctamente al taller.',
+  'Estamos realizando la revisión general.',
+  'El mantenimiento está avanzando correctamente.',
+  'Tu Toyota está en sus últimos procesos.',
+  'Tu vehículo está listo para ser reclamado.',
 ]
 
 export const entregaMessages = [
-  'Tu vehiculo ya fue confirmado.',
-  'Estamos realizando los ultimos procesos de preparacion.',
-  'Tu Toyota pronto estara contigo.',
-  'Tu vehiculo esta listo para ser entregado.',
+  'Tu vehículo ya fue confirmado.',
+  'Estamos realizando los últimos procesos de preparación.',
+  'Tu Toyota pronto estará contigo.',
+  'Tu vehículo está listo para ser entregado.',
 ]
 
 export const puntosWays = [
@@ -154,18 +154,18 @@ export const puntosBenefits = [
 export const accesorios = ['Termos Toyota', 'Gorras Toyota', 'Llaveros', 'Sombrillas']
 
 export const teaHighlights = [
-  'Te caliente',
-  'Musica tranquila',
+  'Té caliente',
+  'Música tranquila',
   'Ambiente inspirado en la serenidad japonesa',
 ]
 
 export const teaBenefitInfo = {
-  'Te caliente':
-    'Ayuda a relajar el cuerpo, reduce la sensacion de estres y crea una pausa reconfortante durante la espera.',
-  'Musica tranquila':
-    'Favorece un estado mental calmado, mejora el animo y disminuye la tension mientras esperas tu vehiculo.',
+  'Té caliente':
+    'Ayuda a relajar el cuerpo, reduce la sensación de estrés y crea una pausa reconfortante durante la espera.',
+  'Música tranquila':
+    'Favorece un estado mental calmado, mejora el ánimo y disminuye la tensión mientras esperas tu vehículo.',
   'Ambiente inspirado en la serenidad japonesa':
-    'Genera sensacion de orden y bienestar, permitiendo vivir una experiencia mas armoniosa y agradable.',
+    'Genera sensación de orden y bienestar, permitiendo vivir una experiencia más armoniosa y agradable.',
 }
 
 export const playlistUrl =
